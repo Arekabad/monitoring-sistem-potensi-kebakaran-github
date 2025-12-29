@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Monitoring Sistem</title>
+</head>
+
+<body>
+
+<header>Monitoring Sistem</header>
+
+<div class="menu-toggle" id="menuToggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+            <li><a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History Data</a></li>
+            <li><a href="grafik.html"><i class="fa-solid fa-chart-line"></i> Grafik</a></li>
+            <li><a href="troubleshooting.html"><i class="fa-solid fa-gear"></i> Pengaturan</a></li>
+        </ul>
+    </div>
+    <!-- Main Section -->
+    <div class="main" id="main">
+        <div class="content">
+            <div class="dashboard">
+
+                <h1>Monitoring Dashboard</h1>
+
+                <div class="card-container">
+
+                <div class="card suhu">
+                    <i class="fa-solid fa-temperature-high"></i>
+                    <h3>Suhu</h3>
+                    <p id="suhu">-- °C</p>
+                </div>
+
+                <div class="card kelembaban">
+                    <i class="fa-solid fa-droplet"></i>
+                    <h3>Kelembapan</h3>
+                    <p id="kelembaban">-- %</p>
+                </div>
+
+                <div class="card angin">
+                    <i class="fa-solid fa-wind"></i>
+                    <h3>Kecepatan Angin</h3>
+                    <p id="angin">-- m/s</p>
+                </div>
+
+                <div class="card arah">
+                    <i class="fa-solid fa-compass"></i>
+                    <h3>Arah Angin</h3>
+                    <p id="arah">--</p>
+                </div>
+
+                <div class="card derajat">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h3>Derajat Arah</h3>
+                    <p id="derajat">--°</p>
+                </div>
+
+                <div class="card gas">
+                    <i class="fa-solid fa-smog"></i>
+                    <h3>Kadar Gas</h3>
+                    <p id="gas">-- ppm</p>
+                </div>
+
+                <div class="card status">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Status Sistem</h3>
+                    <p id="status">--</p>
+                </div>
+
+                <div class="card kondisi">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>Kondisi</h3>
+                    <p id="kondisi">--</p>
+                </div>
+
+                <div class="card buzzer">
+                    <i class="fa-solid fa-bell"></i>
+                    <h3>Buzzer</h3>
+                    <p id="buzzer">--</p>
+                </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>Sistem Monitoring Pendeteksi Potensi Kebakaran</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

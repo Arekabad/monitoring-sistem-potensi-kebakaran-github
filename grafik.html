@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Monitoring Sistem - Grafik</title>
+</head>
+
+<body>
+
+<header>
+    <i class="fas fa-chart-line"></i> Monitoring Sistem - Grafik Data
+</header>
+
+<div class="menu-toggle" id="menuToggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2><i class="fas fa-bars"></i> Menu</h2>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+            <li><a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History Data</a></li>
+            <li><a href="grafik.html" class="active"><i class="fa-solid fa-chart-line"></i> Grafik</a></li>
+            <li><a href="troubleshooting.html"><i class="fa-solid fa-gear"></i> Pengaturan</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main" id="main">
+        <div class="content">
+            <div class="dashboard">
+
+                <h1><i class="fas fa-chart-area"></i> Grafik Data Sensor</h1>
+                <p style="text-align: center; color: #666; margin-bottom: 20px;">
+                    Visualisasi data sensor secara real-time dengan filter berdasarkan tanggal
+                </p>
+
+                <!-- Filter Container -->
+                <div id="chartFilterContainer"></div>
+
+                <div class="card-container">
+                    <!-- Container Grafik -->
+                    <div class="card chart-card">
+                        <h3><i class="fas fa-temperature-high"></i> Grafik Suhu</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="chartSuhu"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="card chart-card">
+                        <h3><i class="fas fa-tint"></i> Kelembaban</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="chartKelembaban"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="card chart-card">
+                        <h3><i class="fas fa-cloud"></i> Gas</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="chartGas"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="card chart-card">
+                        <h3><i class="fas fa-wind"></i> Kecepatan Angin</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="chartWindspeed"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="card chart-card">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Status</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="chartStatus"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <i class="fas fa-fire"></i> Sistem Monitoring Pendeteksi Potensi Kebakaran
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
